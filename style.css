@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 80%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fffcff;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar {
+  width: 60rem;
+  height: 52rem;
+  background-color: #e8faed;
+}
+
+.calendarHeader {
+  width: 100%;
+  height: 12rem;
+  background-color: #4aaa85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e8faed;
+  background-color: #4aaa85;
+  color: #e8faed;
+}
+
+.weekDays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  color: #247ba0;
+}
+
+.weekDays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: calc(59.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monthDays {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+  color: #247ba0;
+}
+
+.monthDays div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(54.2rem / 7);
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthDays div:hover {
+  background-color: #e8faed;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.select {
+  border: 0.2rem solid #777;
+}
+
+
+.prevDate,
+.nextDate {
+  opacity: 0.5;
+  font-size: 75%;
+}
+
+.today {
+  background-color: #4aaa85 !important;
+  color: #eee;
+}
+
+.event {
+  height: 52rem;
+  background-color: #e8faed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  font-size: larger;
+}
+
+.dayEvent  {
+    font-size: 1.5rem !important;
+    background-color: #4aaa85 !important;
+    color: white !important;
+    border-radius: 5px;
+    height: 40% !important;
+    width: 100% !important;
+    border: 1px solid #e8faed !important;
+    padding-left: 5px !important;
+}
+
+.newEvent {
+  display: none;
+  color: #247ba0;
+  height: 50%;
+  padding: 25px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newEvent input {
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #e8faed;
+}
+
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+
+.newEvent select {
+  border: 1px solid #e8faed;
+}
+
+.displayEvent {
+  display: none;
+  color: #247ba0;
+  height: 50%;
+  padding: 25px;
+  width: 100%;
+}
+
+.displayEvent p {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.meeting {
+  background-color: #81a798  !important;
+}
+.call {
+  background-color: #396453 !important;
+}
+.ooo {
+  background-color: #3ecf95 !important;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calendar">
+        <div class="calendarHeader">
+          <button id="prev">Prev</button>
+          <h1 id="headerDate"></h1>
+          <button id="next">Next</button>
+        </div>
+        <div class="weekDays">
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+          <div>Sun</div>
+        </div>
+        <div class="monthDays"></div>
+      </div>
+
+      <div class="event">
+        <div class="displayEvent">
+          <h2 id="eventTitle"></h2>
+          <h4>Date:</h4>
+          <p id="eventDate"></p>
+          <h4>Time:</h4>
+          <p id="eventTime"></p>
+          <h4>Event Type</h4>
+          <p id="eventTypeDescription"></p>
+          <h4>Description:</h4>
+          <p id="eventDescription"></p>
+          <button id="closeEvent">Close</button>
+          <button id="delete">Delete</button>
+        </div>
+
+        <div class="newEvent">
+          <h2>Create New Event</h2>
+          <label for="eventTitleInput">Event Title</label>
+          <input id="eventTitleInput" placeholder="Event Title" />
+          <label for="startTimeInput">Event Start Time</label>
+          <input id="startTimeInput" type="time" />
+          <label for="endTimeInput">Event End Time</label>
+          <input id="endTimeInput" type="time" />
+          <label for="eventDescriptionInput">Event Description</label>
+          <input id="eventDescriptionInput" placeholder="Description" />
+          <label for="eventType">Type</label>
+          <select name="eventType" id="eventType">
+            <option value="">--</option>
+            <option value="meeting" >Meeting</option>
+            <option value="call">Call</option>
+            <option value="ooo">Out of Office</option>
+          </select>
+          <button id="save">Save</button>
+          <button id="closeForm">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
